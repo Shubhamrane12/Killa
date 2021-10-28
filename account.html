@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../killa/css/account.css">
+    </head>
+    <body>
+        <div class="page" style="background-image: url(../killa/image/b2.jpeg);">
+            
+            <div class="navbar">
+                <div class="content" >
+                    <div class="logo"><a href="killa.php">Killa</a></div>
+                    <ul class="menu">
+                      <li><a href="killa.php">Home</a></li>
+                      <li><a href="killa.php#FORTS">Forts</a></li>
+                      <li><a href="blog.php">Blog</a></li>
+                      <li><a href="as.php">About-Us</a></li>
+                      <li><a href="account.html">Account</a></li>
+                    </ul>            
+                  </div>
+            </div>
+
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toogle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toogle-btn" onclick="register()">Register</button>
+                </div>
+
+                <form id="login" class="input" action="login.php" method="POST">
+                    <input type="text" name="user" class="in-field" placeholder="User Id" required>
+                    <input type="password" name="password" class="in-field" placeholder="Password" required><br><br><br>
+                    <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+
+                <form id="register" class="input" action="account.php" onsubmit="return vali()" method="POST">
+                    <input type="text" name="user" class="in-field" placeholder="User Id" required>
+                    <input type="email" name="email" class="in-field" placeholder="email-id" required>
+                    <input type="password" name="password" id="pwd" class="in-field" placeholder="Password" required><br><br>
+                    <!-- <input type="checkbox" class="check-box"><span>I Agree Terms & Conditions</span> -->
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+            
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            var pwd = document.getElementById("pwd");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+
+            function vali(){
+            // Validate lowercase letters
+            var lowerCaseLetters = /[a-z]/g;
+            var upperCaseLetters = /[A-Z]/g;
+            var numbers = /[0-9]/g;
+            var symbols= /[@&*!$#]/g;
+            if(pwd.value.match(lowerCaseLetters)) {
+                if(pwd.value.match(upperCaseLetters)) {
+                    if(pwd.value.match(numbers)) {
+                        if(pwd.value.match(symbols)) {
+                            if(pwd.value.length >= 8) {
+                                return true;
+                            } else {
+                                alert("Password Must Be Greater Than 8 Character!");
+                                pwd.focus();
+                                return false;
+                            }
+                        } else {
+                            alert("Password Must Contain Atleast One of These Symbols[@ # $ & * !]");
+                            pwd.focus();
+                            return false;
+                        }
+                    } else {
+                        pwd.focus();
+                        alert("Password Must Contain Atleast One Number!");
+                        return false;
+                    }
+                } else {
+                    pwd.focus();
+                    alert("Password Must Contain Atleast One UpperCase!");
+                    return false;
+                }
+            } else {
+                pwd.focus();
+                alert("Password Must Contain Atleast One LowerCase!");
+                return false;
+            }
+
+            // Validate capital letters
+            
+
+            // Validate length
+            if(pwd.value.length >= 8) {
+                pass
+            } else {
+                pwd.focus();
+            }
+        }
+        </script>  
+    </body>
+    
+</html>

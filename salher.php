@@ -1,0 +1,679 @@
+<?php
+$con=mysqli_connect('127.0.0.1','root','','blogbllog');
+$s= "select * from salher";
+$result=mysqli_query($con,$s);
+session_start();
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script>console.log('kasgdiasgdiu -- '+'<?php echo $_SESSION["salherScore"]; ?>')</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salher | Killa (UFOM)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../killa/css/content.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="killa.php">Killa</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="killa.php">Home</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#HTR">How to Reach</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#NA">Nearby Attractions</a></li>
+        <li><a href="#SAC">Shopping & Cusines</a></li>
+        <li><a href="#Quiz">Quiz</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="bannerS">
+    <h1>Salher</h1>
+</div>
+
+<div class="about">
+ <div class="content">
+   <div class="Vishalgad">
+ <h2 id="history" class="title2">History of Salher</h2>
+      <div class="row1">
+        <div class="col-v1">
+        <p><b>
+            Salher is the site of the highest fort in the Sahyadri mountains and the second highest peak at 1567 metres (5,141 ft) after Kalsubai in Maharashtra and also 32nd highest peak in Western Ghats. This fort is one of the celebrated forts of the Maratha empire.<br>   
+    <br>According to a legend, Lord Parshuram did his Tapascharya at Salher Fort. After winning the earth and giving it as donation, he made land for himself to live in, by pushing the sea back with his arrows, right from this place.
+     </b></p>
+    <p><b>
+        Battle of Salher:
+    </b></p>
+    <p><b>
+        The Treaty of Purandar (1665) required Chhatrapati Shivaji Maharaj to cede 23 forts to the Mughals. Strategically important forts, which were fortified with garrisons, such as Sinhagad, Purandar, Lohagad, Karnala, and Mahuli were turned over to the Mughal empire. At the time of this treaty, the Nashik region, that contained the forts Salher and Mulher, was firmly in the Mughal Empire's hands since 1636. The signing of this treaty resulted in Chhatrapati Shivaji Maharaj’s visit to Agra and after his famous escape from the same in September 1666, 2 years of ‘uneasy truce’ followed. However, the destruction of the temples of Viswanath and Benares along with Mughal Emperor Aurangzeb’s rejuvenated anti-hindu policies resulted in Chhatrapati Shivaji Maharaj declaring war against the Mughals once again.<br><br>
+        The period between 1670-1672 saw a dramatic rise in Chhatrapati Shivaji Maharaj’s power and territory. Maharaja’s armies successfully conducted raids at Baglan, Khandesh, and Surat and retook more than a dozen forts.This culminated with a decisive victory against a Mughal army of more than 40,000 on an open field near Salher.<br><br>
+        </b></p>
+    
+    <div class="row2">
+        <div class="col-3">
+        <img style="border:6px outset #a1a19f;" src="image/Salher/s14.png">
+        <center><h4>Peshwa Moropant Pingale </h4></center>  
+        </div>
+        <div class="col-3">
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s16.png">
+        <center><h4>Sarsenapati Prataprao Gujar</h4></center>
+        </div>
+    </div>
+    <p><b>Sardar Moropant Pingle and along with his army of 15,000 captured the Mughal forts Aundha, Patta, Trimbak and attacked Salher and Mulher in January 1671. This led Mughal Emperor Aurangzeb to send two of his generals Ikhlas Khan and Bahlol Khan along with 12,000 horsemen to reclaim Salher. In October 1671, the Mughals laid siege on Salher. In return Chhatrapati Shivaji Maharaj commanded his two commanders Sardar Moropant Pingle and Sardar Prataprao Gujar reclaim the fort. 50,000 Mughals had besieged the fort for more than 6 months. Maharaj knew the strategic importance of Salher as it was the main fort on important trade routes. Dilerkhan had also attacked Pune in the meanwhile and Maharaj could not save Pune because his main armies were away. Chhatrapati Shivaji Maharaj devised a plan to divert Dilerkhan by forcing him reach Salher. He ordered Moropant who was in South Konkan and Prataprao who was raiding near Aurangabad to meet and attack Mughals at Salher to relieve the fort. <br><br>
+        In his letter to his commanders Shivaji Maharaj had written 'Go to the north and attack Salher and defeat the enemy’ Both the Maratha forces met near the village of Vani, they bypassed the Mughal camp at Nashik and reached near Salher. The total Maratha strength was of 40,000(20,000 infantry + 20,000 cavalry). The terrain was not suitable for cavalry battle hence the Maratha commanders decided to lure, split and finish the Mughal forces at different places. As per the plan Prataprao Gujar stormed the Mughals with 5,000 cavalry and killed many unprepared soldiers. After half an hour the Mughals became fully ready and Prataprao started to flee with his army.<br><br>
+        The entire Mughal cavalry of 25,000 started chasing the Marathas. Prataprao lured mughal cavalry in a pass 25 kms away from Salher where the 15,000 cavalries under Anand Rao Makaji was hiding. Prataprao turned his back in the pass and attacked the Mughals once again. The 15,000-fresh cavalry under Anand Rao blocked the other end of the pass and Mughals were surrounded from all sides. The fresh Maratha cavalry soundly defeated the tired Mughal cavalry in 2-3 hours. Thousands of Mughals fled the Battle.<br><br>
+        Moropant later surrounded and attacked the 25,000 strong Mughal infantries at Salher with his 20,000 infantries. Prominent Maratha sardar and Maharaja's childhood friend Suryaji Kakde was killed by a Zamburak cannon in the battle.<br><br>
+        The battle lasted for an entire day and it is estimated that around 10,000 men were killed on both the sides. The Mughal military machines (consisting of cavalry, infantry, and artillery) were outmatched by the light cavalry of the Marathas. The imperial Mughal armies were completely routed and the Marathas gave them a crushing defeat. 6,000 horses, an equal number of camels, 125 elephants, and an entire Mughal train were captured by the victorious Maratha Army. Other than this, a large amount of goods, treasures, gold, jewels, clothes, and carpets were seized by the Marathas. Also The money acquired after raiding Surat was brought to this fort first on its way to the Maratha capital forts.<br><br>
+        The Sabhasad Bakhar describes the battle as follows "As the fighting began, such a (cloud of) dust arose that for a space of a three-kilometre square, friend and foe could not be distinguished. Elephants were killed. Ten thousand men on the two sides became corpses. The horses, camels, elephants (killed) were beyond counting. A flood of blood streamed (in the battlefield). The blood formed a muddy pool and in it (people) began to sink, so (deep) was the mud." <br><br>
+        The battle resulted in a decisive Maratha victory which resulted in the liberation of Salher. Further, the nearby fort of Mulher was also taken from the Mughals as a consequence of this battle. 22 wazirs of note were taken as prisoners and Ikhlas Khan and Bahlol Khan were captured. Among the Mughal soldiers who were prisoners around one or two thousand escaped. The notable Panchazari Sardar of the Maratha army Suryajirao Kakade was killed in this battle and was revered for his ferocity during the battle. Approximately a dozen Maratha sardars were gifted for their remarkable achievements in the battle and the two officers (Sardar Moropant Pingle and Sardar Prataprao Gujar) were specially rewarded.<br><br>
+        In the 18th century, the Peshwas occupied this fort and later by the British.
+    </b></p>
+    </div>
+    </div>
+    </div>
+    <hr>
+    
+    <!-------- HTR -------->
+    
+    <div class="fort">
+    <h2 id="HTR" class="title2">How to Reach</h2>
+    <div class="row1">
+    <div class="col-v1">
+                 
+    <p><b>By Car:</b></p>
+            <div class="row2">
+                <div class="col-3">
+                
+                <img style="border:6px outset #a1a19f;" src="image/Salher/s26.png">
+                <center><h4>National Highway 3 by Car</h4></center> 
+         </div>
+            </div>
+    <p><b>
+        The nearest town is Taharabad, it is 112 km away from Nashik via Satana. The climbing to Salher fort can be started from village-Waghambe, Salher or Maldar. It requires equal time( 2 hrs.) and effort to climb from either of the three villages. However, from Waghambe, it is a regular path that reaches in the saddle between Salota and Salher forts.
+    </b></p><hr>
+            
+    <p><b>By Train:</b></p>
+    <div class="row2">
+    <div class="col-3">
+     
+    <img style="border:6px outset #a1a19f;" src="image/Salher/s21.png">
+    <center><h4>Nearest Railway Station</h4></center>
+     </div>
+    </div>
+    <p><b>
+        By train you can reach Nasik Road railway stations And then you can take local bus or cars to reach Salher. 
+        </b></p><hr>
+    
+    <p><b>By Air:</b></p>
+    <div class="row2">
+                <div class="col-3">
+                   
+                    <img style="border:6px outset  #a1a19f;" src="image/Salher/s23.png">
+                    <center><h4>Nearest Airport</h4></center>
+                    </div>
+            </div>
+    <p><b>
+        The nearest airport to Nasik is Mumbai's Chhatrapati Shivaji International Airport, about 180 kilometers away. The distance between Nasik and Mumbai can be covered in about 3.5 – 4 hours by road and rail.    </b></p>
+            </div>
+         </div>
+        </div>
+        <hr>
+    
+    
+        <!-------- Gallery -------->
+    
+    <div class="fort">
+        <h2 id="gallery" class="title2">Gallery</h2>
+        <div class="row1">
+        <div class="col-v1">
+     <p><b>What to see on fort ?</b></p>
+    <p><b>
+        There is a Lord Parshuram’s temple present on the fort, also there are various caves where campaigning can be done, The doors or Mahadarwaja is still intact, also there is a rock cut water tanks present on the fort, and from the top of the fort, one can see the Baglan region along with the adjacent Salota fort and also panoramic view of the Sahyadris.
+     <br></b></p>
+    
+    <p><b>Our Gallery</b></p>
+    
+    <div class="row2">
+
+        <div class="col-3">
+            
+            <img style="border:6px outset  #a1a19f;" src="image/Salher/s6.png">
+            <center><h4>Fort Salher</h4></center>
+            </div> 
+
+        <div class="col-3">
+            
+            <img style="border:6px outset  #a1a19f;" src="image/Salher/s15.png">
+            <center><h4>Lord Parshuram Temple</h4></center>
+            </div> 
+            
+        <div class="col-3">
+                     
+                    <img style="border:6px outset  #a1a19f;" src="image/Salher/s2.png">
+                    <center><h4>Map of Stairs to reach Top</h4></center>
+                    </div> 
+
+
+    <div class="col-3">
+     
+    <img style="border:6px outset #a1a19f;" src="image/Salher/s11.png">
+    <center><h4>1'st Mahadarwaja </h4></center>
+    </div>
+    
+     <div class="col-3">
+          
+        <img style="border:6px outset #a1a19f;" src="image/Salher/s12.png">
+        <center><h4>Stairs to Mahadarwaja</h4></center>
+        </div>
+    
+    <div class="col-3">
+        
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s13.jpg">
+        <center><h4>Rock Cut Door</h4></center>
+        </div>
+    
+        <div class="col-3">
+             
+            <img style="border:6px outset  #a1a19f;" src="image/Salher/s3.png">
+            <center><h4>2nd Mahadarwaja</h4></center>
+            </div>
+         
+            <div class="col-3">
+                 
+                <img style="border:6px outset  #a1a19f;" src="image/Salher/s4.png">
+                <center><h4>Water Tank</h4></center>
+                </div>
+        
+            <div class="col-3">
+                 
+                <img style="border:6px outset  #a1a19f;" src="image/Salher/s8.png">
+                <center><h4>Rock cut Stairs</h4></center>
+                </div>
+                
+                <div class="col-3">
+                    
+                    <img style="border:6px outset  #a1a19f;" src="image/Salher/s9.png">
+                    <center><h4>Rock cut Water Tank</h4></center>
+                    </div> 
+
+                    <div class="col-3">
+ 
+                        <img style="border:6px outset  #a1a19f;" src="image/Salher/s7.png">
+                        <center><h4>Base View</h4></center>
+                        </div> 
+
+                        <div class="col-3">
+                             
+                            <img style="border:6px outset  #a1a19f;" src="image/Salher/1s.png">
+                            <center><h4>Fort Salher</h4></center>
+                            </div> 
+                    
+                    
+    
+    </div>
+    <p><b>Accomodation </b></p>
+    <p><b>
+        Night camping can be done either at the top of Salher fort or in Forest Camping rest house at village Salher. There are no good hotels or shops in either of the three villages. The only option is to stay in Nashik City
+     </b></p>
+    </div>
+    </div>
+    </div>
+    <hr>
+    
+    <!-------- NA -------->
+    
+    <div class="fort">
+    <h2 id="NA" class="title2">Nearby Attractions</h2>
+    <div class="row1">
+    <div class="col-v1">
+     <p><b>
+    1) Salota Fort:</b></p>
+    
+    <div class="row2">
+    <div class="col-3">
+      
+    <img style="border:6px outset #a1a19f;" src="image/Salher/s25.png">
+    <center><h4>Salota Fort</h4></center> 
+    </div>
+    </div>
+    <p><b>
+        Salota fort is a hill fort in Maharashtra, India. It is located in the Baglan region of Nashik. It lies close to the Salher fort.  
+      </b></p><hr>
+    
+    
+    <p><b>2) Shri Trimbakeshwar Shiva Temple: </b></p>
+     <div class="row2">
+        <div class="col-3">
+          
+        <img style="border:6px outset #a1a19f;" src="image/Salher/s18.png">
+        <center><h4>Shri Trimbakeshwar Shiva Temple</h4></center>  
+        </div>
+    </div>
+     <p><b>
+        Trimbakeshwar Shiva Temple is an ancient Hindu temple in the town of Trimbak, in the Trimbakeshwar tehsil in the Nashik District of Maharashtra, India, 28 km from the city of Nashik and 40 km from Nashik road. It is dedicated to the god Shiva and is one of the twelve Jyotirlingas, where the Hindu genealogy registers at Trimbakeshwar, Maharashtra are kept. The origin of the sacred Godavari river is near Trimbak. Kusavarta kunda (sacred pond) in the temple premises, built by Shrimant Sardar Raosaheb Parnerkar who was the Fadnavis of Indore State, is the source of the Godavari River, the longest river in peninsular India. A bust of Sardar Fadnavis and his wife can be seen on the edge of the kunda. The current temple was built by Peshwa Balaji Baji Rao (Nanasaheb).
+         </b></p><hr>
+    
+    <p><b>3) Shirdi: </b></p>
+    <div class="row2">
+    <div class="col-3">
+         
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s20.png">
+        <center><h4>Shri Saibaba Shirdi</h4></center>
+        </div>
+    </div>
+    <p><b>
+        Shirdi also known as Sainagar is a city in the Indian state of Maharashtra. It is located in the Rahata taluka of Ahmednagar District. It is accessible via the Ahmednagar–Malegaon State Highway No.10, approximately 83 km from Ahmednagar and 15 km from Kopargaon. It is located 185 km east of the Western Seashore line (the Ahmednagar–Manmad road), a very busy route.
+        Shirdi is famously known as the home of the late 19th century saint Shri Sai Baba. The Shri Saibaba Sansthan Trust located in Shirdi is one of the richest temple organisations
+          </b></p><hr>
+
+
+  <p><b>4) Mulher Fort: </b></p>
+  <div class="row2">
+  <div class="col-3">
+       
+      <img style="border:6px outset  #a1a19f;" src="image/Salher/s19.png">
+      <center><h4>Mulher Fort</h4></center>
+      </div>
+  </div>
+  <p><b>
+    The Rathore dynasty of Bagul ancestry reigned Baglan between 1310 and 1638. Mulher fort was their capital. The Mughals then gained control of Baglan. For the Surat ransack of January 1664 & October 1670, Shivaji Maharaj had followed the route passing through Baglan to reach Surat. On the first occasion, the entire region from Pune to Surat was under the command of the Mughals while on the second occasion, Baglan was mainly under their control. The Mughals chased Shivaji Raje on his return journey but they were defeated in the Kanchana Pass. Soon after this, Shivaji Maharaj began a campaign in this region. In January 1671 the first assault brought the Salher fort under the Maratha rule. They then attacked Mulher fort but the Mughal Killedar repulsed the attack. However, the Marathas captured the Chaulher fort. In October 1671, the Mughals laid siege to Salher fort. But Shivaji Maharaj despatched Moropant and Prataprao to break down the siege. They not only lifted the siege of Salher, but also attacked Mulher and captured it in February 1672. This feat resulted in the assimilation of the entire Baglan region into Swarajya.
+</b></p><hr>
+
+<p><b>5) Ramshej fort:  </b></p>
+    <div class="row2">
+    <div class="col-3">
+        
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s27.png">
+        <center><h4>Ramsej Fort</h4></center>
+        </div>
+    </div>
+    <p><b>
+        Ramsej or Ramshej Fort (Ramshej - Rama's bed)(Marathi: रामशेज किल्ला) is a small fort located 10 kilometres (6.2 mi) north-west of Nashik, in the Indian state of Maharashtra. There is a story that Lord Rama stayed for a while on this fort while going to Sri Lanka. This fort can be visited in a day from Nashik. This fort is located on the busy Nashik-Vapi Route.<br>
+        The famous story revolves where under the reign of Chhatrapati Sambhaji Maharaj, Where  Ramshej was defended by the Marathas against Mughals for more than Six and a Half years.
+         </b></p><hr>
+
+  <p><b>6) Pandav Leni: </b></p>
+    <div class="row2">
+    <div class="col-3">
+        
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s17.png">
+        <center><h4>Pandav Leni</h4></center>
+        </div>
+    </div>
+    <p><b>
+        The Nasik Caves, or sometimes Pandavleni Caves, are a group of 24 caves carved between the 1st century BCE and the 3rd century CE, though additional sculptures were added up to about the 6th century, reflecting changes in Buddhist devotional practices mainly.
+      </b></p><hr>
+
+  <p><b>7) Bhandardara: </b></p>
+    <div class="row2">
+    <div class="col-3">
+        
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s24.png">
+        <center><h4>Bhandardara</h4></center>
+        </div>
+    </div>
+    <p><b>
+        Bhandardara is a holiday resort village near Igatpuri, in the western ghats of India. The village is located in the Akole tehsil, Ahmednagar district of the state of Maharashtra, about 185 kilometers (115 mi) from Mumbai and 155 kilometers (96 mi) from Ahmednagar.
+      </b></p><hr>
+
+
+  <p><b>8) Kalsubai: </b></p>
+    <div class="row2">
+    <div class="col-3">
+         
+        <img style="border:6px outset  #a1a19f;" src="image/Salher/s28.png">
+        <center><h4>Kalsubai</h4></center>
+        </div>
+    </div>
+    <p><b>
+        Bhandardara region is home to Mount Kalsubai, the highest peak (5,400 ft or 1,600 m) in Maharashtra.<br>
+         </b></p><hr>
+
+      <p><b>9) Wilson Dam and Pravara River: </b></p>
+    <div class="row2">
+    <div class="col-3">
+      <img style="border:6px outset  #a1a19f;" src="image/Salher/s36.png">
+        <center><h4>Wilson Dam</h4></center>
+        </div>
+        <div class="col-3">
+          <img style="border:6px outset  #a1a19f;" src="image/Salher/s39.png">
+            <center><h4>Pravara River</h4></center>
+            </div>
+    </div>
+    <p><b>
+      Another tourist attraction in Bhandardara is the Wilson Dam on the Pravara River, which was built in 1910. 
+      </b></p><hr>
+
+      <p><b>10)  Umbrella and Randhaa Falls: </b></p>
+    <div class="row2">
+    <div class="col-3">
+      <img style="border:6px outset  #a1a19f;" src="image/Salher/s40.png">
+        <center><h4>Umbrella Falls</h4></center>
+        </div>
+        <div class="col-3">
+          <img style="border:6px outset  #a1a19f;" src="image/Salher/s38.png">
+            <center><h4>Randhaa Falls</h4></center>
+            </div>
+            
+    </div>
+    <p><b>
+      Another tourist attraction in Bhandardara is The Umbrella Falls which also draw visitors, although it can be seen only during the monsoons between July and October. About 10 km away from Shendi Village is the Randhaa Waterfalls.
+      </b></p><hr>
+
+      <p><b>11) Ratangad, Harishchandragad and Arthur Lake: </b></p>
+    <div class="row2">
+    <div class="col-3">
+      <img style="border:6px outset  #a1a19f;" src="image/Salher/s35.png">
+        <center><h4>Aerial View of Ratangad</h4></center>
+        </div>
+        <div class="col-3">
+          <img style="border:6px outset  #a1a19f;" src="image/Salher/s34.png">
+            <center><h4>Arthur Lake</h4></center>
+            </div>
+            <div class="col-3">
+              <img style="border:6px outset  #a1a19f;" src="image/Salher/s37.png">
+                <center><h4>Harishchandragad and Kokankada</h4></center>
+                </div>
+    </div>
+    <p><b>
+      <br> The Ratangad fort is around 22 km from Shendi/ Bhandardara, and is connected by both roadway, and ferry across the Lake Arthur. On the Kalsubai side, at the far end of a 22 km roadway across forests and tribal villages, is Konkankada from where there are views of the plains.<br>
+         Harishchandragad is another nearby mountain hiking spot with ancient temples on top.
+      </b></p><hr>
+  
+</div>
+</div>
+</div>
+    
+    
+
+  <!-------- SAC -------->
+    
+  <div class="fort">
+    <h2 id="SAC" class="title2">Shopping & Cusines</h2>
+    <div class="row1">
+    <div class="col-v1">
+                 
+    <p><b>Shopping:</b></p><br>
+ <div class="row2">
+                <div class="col-3">
+                  
+                <img style="border:6px outset #a1a19f;" src="image/Salher/s29.png">
+                <center><h4>Saraf Bazaar</h4></center> 
+         </div>
+         <div class="col-3">
+          
+          <img style="border:6px outset #a1a19f;" src="image/Salher/s30.png">
+          <center><h4>Tibetian Bazaar</h4></center>
+   </div>
+   <div class="col-3">
+      
+    <img style="border:6px outset #a1a19f;" src="image/Salher/s31.png">
+    <center><h4>Handicrafts at Deolali Camp</h4></center> 
+  </div>
+</div>
+    <p><b>
+1) Saraf Bazaar:<br> One of the busiest places in the entire city, Nashik’s Saraf Bazaar gleams and glistens with all sorts of jewellery and bijouterie, with necklaces and earrings, rings and bracelets – Saraf Bazaar is teeming with people buying all sorts of small treasures. The market offers you a variety of gifts and souvenirs, which make sentimental, pretty presents.<br><br>
+2) Tibetian Bazaar:<br> If preparing for a cold winter, head to the Tibetan Bazaar in Nashik to buy all sorts of woollens from tiny stalls and shops. This list includes socks and gloves, scarves and mufflers, sweaters and jackets at reasonable prices. The bazaar is a perfect place to satiate hunger, with Maharashtrian delicacies lined up in rows at the food stalls. The marketplace offers chaat, vegetarian and non-vegetarian cuisine. Everything is economical, too.<br><br>
+3) Deolali Camp:<br> Nashik’s Deolali Camp is a tourist attraction for the military base and temples found there. However, Deolali Camp contains shops and markets, and is perfect for picking up a variety of souvenirs, presents and artifacts.<br>
+ </b></p>
+ <hr>
+            
+<p><b>Cusines:</b></p><br>
+<div class="row2">
+    <div class="col-3">
+     
+      <img style="border:6px outset #a1a19f;" src="image/Salher/s22.png">
+      <center><h4>Grapes</h4></center>  
+       </div>
+      
+
+      <div class="col-3">
+         
+        <img style="border:6px outset #a1a19f;" src="image/Salher/s32.png">
+        <center><h4>Shevaya Misal</h4></center>
+         </div>
+        
+
+        <div class="col-3">
+           
+          <img style="border:6px outset #a1a19f;" src="image/Salher/s33.png">
+          <center><h4>chaat</h4></center> 
+           </div>
+          </div>
+    <p><b>
+     1) Grapes:-<br> The Wine Capital of India, Nashik is famous for grapes. Nashik is biggest supplier of grapes in India and also home to many vineyards and orchards.<br><br>
+     2) Shevaya Misal:-<br> Misal is a must have when you are in Nashik. The famous destinations in trend these days for having Misal are Sadhana Chulivarchi Misal, Tushar’s.<br><br>
+     3) Chaat:-<br> chaat from Bhagawati Chaat Bhandar in Nashik. Dahi puri from Nandan Sweet Shop at College Road.<br>
+        
+</b></p>
+    
+    
+  </div>
+  </div>
+  </div>
+  <hr>
+    
+    
+  
+
+
+
+    </div>
+    </div>
+
+<!-----Quiz------>
+<h2 id="Quiz" class="title2">Quiz</h2>
+<form name="form2" method="post" action="salherquiz.php">
+<div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-interval="false">
+  
+  <div class="carousel-indicators">
+    
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+  </div>
+  <div class="carousel-inner" style="text-align: center;">
+  <div class="carousel-item active ">
+      <img src="image/hills.jpg" id="pic" class="d-block w-100" alt="...." style="max-width: 1500px; max-height: 600px; position: relative; left: 15%;">
+      <div class="carousel-caption d-none d-md-block" style="top: 15%;
+      bottom: auto;">
+        <h5 style="display: inline-block; font-size: 50px; font-family: cursive;
+	background: #23BF8D;
+	color: #fff;
+	padding: 10px 50px;
+	margin: 30px 0;
+	border-radius: 10px;
+	transition: background 0.5s;
+	align-items: center;">Ready For Quiz</h5>
+        
+      </div>
+    </div>
+  <?php
+  $i=1;
+  while($rows=mysqli_fetch_array($result)){
+    
+  ?>
+    <div class="carousel-item img-fluid">
+      <img src="image/hills.jpg" id="pic" class="d-block w-100" alt="...." style="max-width: 1500px; max-height: 600px; position: relative; left: 15%;">
+      <div class="carousel-caption d-none d-md-block" style="top: 15%;
+      bottom: auto;">
+        <h5><?php echo $rows['Question']; ?></h5><br><br>
+        <div class="row">
+          <div class="col-6">
+            <input type="radio" name="<?php echo $rows['name']; ?>" value="<?php echo $rows['opt1']; ?>" class="btn-check" id="<?php echo $rows['opt1']; ?>" autocomplete="off">
+            <label class="btn btn-outline-primary" for="<?php echo $rows['opt1']; ?>"><?php echo $rows['opt1']; ?></label><br>
+            <input type="radio" name="<?php echo $rows['name']; ?>" value="<?php echo $rows['opt2']; ?>" class="btn-check" id="<?php echo $rows['opt2']; ?>" autocomplete="off">
+            <label class="btn btn-outline-primary" for="<?php echo $rows['opt2']; ?>"><?php echo $rows['opt2']; ?></label><br>
+          </div>
+          <div class="col-6">
+            <input type="radio" name="<?php echo $rows['name']; ?>" value="<?php echo $rows['opt3']; ?>" class="btn-check" id="<?php echo $rows['opt3']; ?>" autocomplete="off">
+            <label class="btn btn-outline-primary" for="<?php echo $rows['opt3']; ?>"><?php echo $rows['opt3']; ?></label><br>
+            <input type="radio" name="<?php echo $rows['name']; ?>" value="<?php echo $rows['opt4']; ?>" class="btn-check" id="<?php echo $rows['opt4']; ?>" autocomplete="off">
+            <label class="btn btn-outline-primary" for="<?php echo $rows['opt4']; ?>"><?php echo $rows['opt4']; ?></label><br>
+            
+            <input type="hidden" name="answer<?php echo $i; ?>" id="answer<?php echo $i; ?>" value="<?php echo $rows['answer']; ?>">
+          </div><!--
+          <button type="submit" onClick=checkans()>Check Answer</button>
+          <div id="result"></div>-->
+        </div>
+      </div>
+    </div>
+    <?php  $i++;}?>
+    
+    <div class="carousel-item">
+      <img src="image/hills.jpg" id="pic" class="d-block w-100" alt="...." style="max-width: 1500px; max-height: 600px; position: relative; left: 15%;">
+      <div class="carousel-caption d-none d-md-block" style="top: 15%;
+      bottom: auto;">
+        <button type="submit" style="display: inline-block;
+	background: #52E124;
+	color: #fff;
+	padding: 10px 50px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+	align-items: center;" name="s">Submit</button>
+        <?php if($_SESSION["salherScore"]){ ?>
+<div id="score">
+
+  <h2 style="color:green; font-size: 50px; width:250px;
+	height: 55px;
+	position:relative;
+	margin:4% auto;
+	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+	overflow:hidden;"
+}><?php echo $_SESSION["salherScore"]; ?>/10</h2>
+
+
+<?php
+
+
+if($_SESSION["salherScore"]>=0 && $_SESSION["salherScore"]<=3){
+$grade="Try Again!!";
+}
+if($_SESSION["salherScore"]>3 && $_SESSION["salherScore"]<=5){
+$grade="Good";
+}
+if($_SESSION["salherScore"]>5 && $_SESSION["salherScore"]<=8){
+$grade="Very Good";
+}
+if($_SESSION["salherScore"]>=9){
+$grade="Excellent!!";
+}
+
+echo "<p style='color:#ff523b; font_family = sans-serif;
+font-size: 50px; padding: 10px 50px;
+margin: 30px 0;
+border-radius: 10px;
+transition: background 0.5s;
+border = 1px solid;'>".$grade."</p>";
+?>
+
+<?php session_unset(); session_destroy();} ?>
+
+
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br>
+</form>
+
+
+<!-------- footer -------->
+
+<div class="footer">
+    <div class="container1">
+    <div class="row">
+    <div class="footer-col-1">
+    <h3>Having Trouble ?</h3>
+    <p><b>Click the About-Us Image for more Info!</b></p>
+    <div class="app-logo">
+        <a href="as.php" target="_blank">
+            <img src="../killa/image/about-us.png"></a>
+    </div>
+    </div>
+    <div class="footer-col-2">
+        <a href="killa.php"><img src="image/logo.png"></a>
+    <p><b>Our purpose is to share information</b></P>
+    </div>
+    <div class="footer-col-3">
+    <h3>Useful Links</h3>
+    <ul>
+    <li><a href="https://www.facebook.com/sahyadripratishthaan/" target="_blank"><p><b>Donate</b></p></a></li>
+    <li><a href="https://www.treksandtrails.org/blog/category/forts-of-maharashtra/" target="_blank"><p><b>Blog Post</b></p></a></li>
+    <li><a href="https://www.maharashtratourism.gov.in/" target="_blank" ><p><b>MTDC</b></p></a></li>
+    <li><a href="as.html" target="_blank"><p><b>Need Help</b></p></a></li>
+    </ul>
+    </div>
+    <div class="footer-col-3">
+    <h3>Get More Information</h3>
+    <ul>
+    <li><a href="https://www.facebook.com/GadKilleSafar" target="_blank"> <p><b>Facebook</b></p> </a> </li>
+    <li><a href="blog.php" target="_blank"> <p><b> Blogs </b></p> </a> </li>
+    <li><a href="https://www.instagram.com/mi_durg_veda/" target="_blank"> <p><b>Instagram</b></p> </a> </li>
+    <li><a href="https://www.youtube.com/channel/UC4BFta04-H7yVIa3045chXA" target="_blank"> <p><b> YouTube </b></p> </a> </li>
+    </ul>
+    </div>
+    </div>
+    <hr>
+    <p class="copyright"><b>Copyright 2020 - Unexplored Forts</b></p>
+    </div>
+    </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+Q1. Korigad is a hill fort located about _______ south of Lonavla in Pune district?
+ans : 20 Km
+
+Q2.What is the other name for Korigad hill fort?
+Ans : Kumwarigad, [Kumbarigad, Koranigad, None]
+
+Q3. How many lakes are present at the top of the fort?
+Ans. 2 [3,5,4]
+
+Q4. The fort is located at _______ height (in meters) above the sea level.
+Ans : 923 [600,650,820]
+
+Q5. In what year did Chh. Shivaji Maharaj incorporated Korigad fort?
+Ans : 1657 [1658,1670,1672]
+
+Q6. Which Colonel invaded Korigad fort on 14th March, 1818?
+Ans : Prother [Williams, Smith, None]
+
+Q7. Temple of which goddess is present on the fort?
+Ans : Koraidevi [Mahalaxmi, Ekveera, None]
+
+Q8. How many cannons are present on the fort?
+Ans. 6 [5,7,9]
+
+Q9. What is the name of the largest cannon on the fort?
+Ans : Laxmi Toph [Kalalbangdi, Chavri, None]
+
+Q10. Which valey can be seen from Korigad fort?
+Ans : Aamby Valley [Plus, Dive Ghat, Ulhaas]
